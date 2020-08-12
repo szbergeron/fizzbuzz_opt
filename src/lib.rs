@@ -2,6 +2,7 @@ pub fn nothing(upper: u64) -> u64 {
     42
 }
 
+// contributed by Sawyer Bergeron
 pub fn fnaive1(upper: u64) -> u64 {
     let mut count = 0;
 
@@ -17,6 +18,7 @@ pub fn fnaive1(upper: u64) -> u64 {
     count
 }
 
+// contributed by Sawyer Bergeron
 pub fn fopt1(upper: u64) -> u64 {
     let mut factor3 = 0;
     let mut factor5 = 0;
@@ -37,6 +39,7 @@ pub fn fopt1(upper: u64) -> u64 {
     count
 }
 
+// contributed by Sawyer Bergeron
 pub fn fopt2(upper: u64) -> u64 {
     let mut factor3 = 0;
     let mut factor5 = 0;
@@ -57,6 +60,7 @@ pub fn fopt2(upper: u64) -> u64 {
     count
 }
 
+// contributed by Sawyer Bergeron
 pub fn fopt3(upper: u64) -> u64 {
     let upper = upper as i64;
 
@@ -77,6 +81,7 @@ pub fn fopt3(upper: u64) -> u64 {
     count as u64
 }
 
+// contributed by @Kanashimia, licensed under WTFPL
 pub fn fzbz2(up: u64)  -> u64 {
     let mut cnt = 0;
     for i in 1..up {
@@ -85,6 +90,7 @@ pub fn fzbz2(up: u64)  -> u64 {
     cnt
 } 
 
+// contributed by @_Damocles'_Code_, licensed under (quote) "Do as you want, permission granted."
 pub fn fzbz1(up: u64) -> u64 {
     (1..up)
         .map(|i| {
@@ -100,6 +106,7 @@ pub fn fzbz1(up: u64) -> u64 {
         .sum()
 }
 
+// contributed by @Kanashimia, licensed under WTFPL
 pub fn fbf(u: u64) -> u64 {
     u/3 + u/5 - (u % 3 == 0) as u64 - (u % 5 == 0) as u64
 }
