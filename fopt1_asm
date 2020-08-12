@@ -1,74 +1,74 @@
-[0m[1m[38;5;9mfizzbuzz::fopt1:
-[0m [0m[1m[38;5;12mcmp    [0m rdi, 2
-[0m [0m[1m[38;5;12mjl     [0m[1m[38;5;10m .LBB1_1
-[0m [0m[1m[38;5;12mlea    [0m r8d, [rdi, -, 1]
-[0m [0m[1m[38;5;12mand    [0m r8d, 1
-[0m [0m[1m[38;5;12mcmp    [0m rdi, 2
-[0m [0m[1m[38;5;12mjne    [0m[1m[38;5;10m .LBB1_8
-[0m [0m[1m[38;5;12mmov    [0m ecx, 1
-[0m [0m[1m[38;5;12mxor    [0m edx, edx
-[0m [0m[1m[38;5;12mxor    [0m edi, edi
-[0m [0m[1m[38;5;12mxor    [0m eax, eax
-[0m [0m[1m[38;5;12mtest   [0m r8, r8
-[0m [0m[1m[38;5;12mjne    [0m[1m[38;5;10m .LBB1_6
-[0m [0m[1m[38;5;12mjmp    [0m[1m[38;5;10m .LBB1_7
-[0m[0m[1m[38;5;10m.LBB1_1:
-[0m [0m[1m[38;5;12mxor    [0m eax, eax
-[0m [0m[1m[38;5;12mret[0m
-[0m[0m[1m[38;5;10m.LBB1_8:
-[0m [0m[1m[38;5;12mpush   [0m rbx
-[0m [0m[1m[38;5;12mmov    [0m r9, r8
-[0m [0m[1m[38;5;12msub    [0m r9, rdi
-[0m [0m[1m[38;5;12madd    [0m r9, 1
-[0m [0m[1m[38;5;12mmov    [0m ecx, 2
-[0m [0m[1m[38;5;12mxor    [0m edx, edx
-[0m [0m[1m[38;5;12mxor    [0m edi, edi
-[0m [0m[1m[38;5;12mxor    [0m eax, eax
-[0m[0m[1m[38;5;10m.LBB1_9:
-[0m [0m[1m[38;5;12mlea    [0m r10, [rcx, -, 1]
-[0m [0m[1m[38;5;12mlea    [0m r11, [rcx, -, 4]
-[0m [0m[1m[38;5;12mxor    [0m esi, esi
-[0m [0m[1m[38;5;12mcmp    [0m r11, rdx
-[0m [0m[1m[38;5;12msete   [0m sil
-[0m [0m[1m[38;5;12mcmove  [0m rdx, r10
-[0m [0m[1m[38;5;12mlea    [0m r11, [rcx, -, 6]
-[0m [0m[1m[38;5;12mxor    [0m ebx, ebx
-[0m [0m[1m[38;5;12mcmp    [0m r11, rdi
-[0m [0m[1m[38;5;12mcmove  [0m rdi, r10
-[0m [0m[1m[38;5;12msete   [0m bl
-[0m [0m[1m[38;5;12madd    [0m rbx, rax
-[0m [0m[1m[38;5;12madd    [0m rbx, rsi
-[0m [0m[1m[38;5;12mlea    [0m rax, [rcx, -, 3]
-[0m [0m[1m[38;5;12mxor    [0m esi, esi
-[0m [0m[1m[38;5;12mcmp    [0m rax, rdx
-[0m [0m[1m[38;5;12mcmove  [0m rdx, rcx
-[0m [0m[1m[38;5;12msete   [0m sil
-[0m [0m[1m[38;5;12mlea    [0m r10, [rcx, -, 5]
-[0m [0m[1m[38;5;12mxor    [0m eax, eax
-[0m [0m[1m[38;5;12mcmp    [0m r10, rdi
-[0m [0m[1m[38;5;12msete   [0m al
-[0m [0m[1m[38;5;12mcmove  [0m rdi, rcx
-[0m [0m[1m[38;5;12madd    [0m rax, rbx
-[0m [0m[1m[38;5;12madd    [0m rax, rsi
-[0m [0m[1m[38;5;12mlea    [0m rsi, [r9, +, rcx]
-[0m [0m[1m[38;5;12madd    [0m rsi, 2
-[0m [0m[1m[38;5;12madd    [0m rcx, 2
-[0m [0m[1m[38;5;12mcmp    [0m rsi, 2
-[0m [0m[1m[38;5;12mjne    [0m[1m[38;5;10m .LBB1_9
-[0m [0m[1m[38;5;12madd    [0m rcx, -1
-[0m [0m[1m[38;5;12mpop    [0m rbx
-[0m [0m[1m[38;5;12mtest   [0m r8, r8
-[0m [0m[1m[38;5;12mje     [0m[1m[38;5;10m .LBB1_7
-[0m[0m[1m[38;5;10m.LBB1_6:
-[0m [0m[1m[38;5;12mlea    [0m r8, [rcx, -, 5]
-[0m [0m[1m[38;5;12mxor    [0m esi, esi
-[0m [0m[1m[38;5;12mcmp    [0m r8, rdi
-[0m [0m[1m[38;5;12msete   [0m sil
-[0m [0m[1m[38;5;12madd    [0m rax, rsi
-[0m [0m[1m[38;5;12madd    [0m rcx, -3
-[0m [0m[1m[38;5;12mxor    [0m esi, esi
-[0m [0m[1m[38;5;12mcmp    [0m rcx, rdx
-[0m [0m[1m[38;5;12msete   [0m sil
-[0m [0m[1m[38;5;12madd    [0m rax, rsi
-[0m[0m[1m[38;5;10m.LBB1_7:
-[0m [0m[1m[38;5;12mret[0m
+fizzbuzz::fopt1:
+ cmp     rdi, 2
+ jl      .LBB1_1
+ lea     r8d, [rdi, -, 1]
+ and     r8d, 1
+ cmp     rdi, 2
+ jne     .LBB1_8
+ mov     ecx, 1
+ xor     edx, edx
+ xor     edi, edi
+ xor     eax, eax
+ test    r8, r8
+ jne     .LBB1_6
+ jmp     .LBB1_7
+.LBB1_1:
+ xor     eax, eax
+ ret
+.LBB1_8:
+ push    rbx
+ mov     r9, r8
+ sub     r9, rdi
+ add     r9, 1
+ mov     ecx, 2
+ xor     edx, edx
+ xor     edi, edi
+ xor     eax, eax
+.LBB1_9:
+ lea     r10, [rcx, -, 1]
+ lea     r11, [rcx, -, 4]
+ xor     esi, esi
+ cmp     r11, rdx
+ sete    sil
+ cmove   rdx, r10
+ lea     r11, [rcx, -, 6]
+ xor     ebx, ebx
+ cmp     r11, rdi
+ cmove   rdi, r10
+ sete    bl
+ add     rbx, rax
+ add     rbx, rsi
+ lea     rax, [rcx, -, 3]
+ xor     esi, esi
+ cmp     rax, rdx
+ cmove   rdx, rcx
+ sete    sil
+ lea     r10, [rcx, -, 5]
+ xor     eax, eax
+ cmp     r10, rdi
+ sete    al
+ cmove   rdi, rcx
+ add     rax, rbx
+ add     rax, rsi
+ lea     rsi, [r9, +, rcx]
+ add     rsi, 2
+ add     rcx, 2
+ cmp     rsi, 2
+ jne     .LBB1_9
+ add     rcx, -1
+ pop     rbx
+ test    r8, r8
+ je      .LBB1_7
+.LBB1_6:
+ lea     r8, [rcx, -, 5]
+ xor     esi, esi
+ cmp     r8, rdi
+ sete    sil
+ add     rax, rsi
+ add     rcx, -3
+ xor     esi, esi
+ cmp     rcx, rdx
+ sete    sil
+ add     rax, rsi
+.LBB1_7:
+ ret
